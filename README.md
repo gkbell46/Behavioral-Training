@@ -33,7 +33,7 @@ python drive.py model.json
 [image1]: ./Model_layers.png "Model Visualization"
 ![Alt text](/Model_layers.jpg?raw=true "Model Visualization")
 
- Nvidia model worked great. Minor tweeks are performed.
+ Nvidia model worked great. Minor tweeks are performed to develop a better model.
  
 1. Added pooling layers
 2. Added droupout layer to avoid overfitting of the model. Layers can be seen in run_save_model() function in the utilityFile.py
