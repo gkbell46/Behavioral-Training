@@ -31,6 +31,8 @@ python drive.py model.json
 
 
 [image1]: ./Model_layers.png "Model Visualization"
+![Alt text](/Model_layers.jpg?raw=true "Model Visualization")
+
  Nvidia model worked great. Minor tweeks are performed.
  
 1. Added pooling layers
