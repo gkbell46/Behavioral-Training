@@ -40,28 +40,28 @@ The details of the layer is ashown below
 
 Training data can be chosen to keep the vehicle driving on the road. Data should consist of center lane driving along with recovering data from the left and tight sides of the road. After training the model by using the data drom center camera car failed to recover during long turns. The training data size was increased by using the left and right camera images. correction factor 0.15 was used to get new corrected angles. Also the images were flipped and angles were multiplied by -1.0 as part of data augumentation. Normalization layer is included using lambda layer. The regular frame sized image used took lot of time in the process of training. So to reduce the calulation in pipeline i image cropping and resizing is done so that only important information is used in training.  Normalization, image cropping and image resizing is also added in the drive.py to match the trained model data.
 
-#####Raw data        
+##### Raw data        
   The original data captured from the simulator is of shape 160,320,3 and size 153600
  
-######Image from Center Camera                                
+###### Image from Center Camera                                
 ![Alt text](/originalcenter.png?raw=true "Original center image")   
 
-######Image from Left Camera 
+###### Image from Left Camera 
 ![Alt text](/originalleft.png?raw=true "Original left image") 
 
-######Image from Right Camera
+###### Image from Right Camera
 ![Alt text](/originalright.png?raw=true "Original right image")
 
-#####Cropped and Resized data
+###### Cropped and Resized data
   The sky and bonnet section in the image has been cropped and resized to 64,64,3 as shown below to improve the processing speed of the pipeline.The preprocessed data is of shape 64,64,3 and size 12288
 
-######Image from Center Camera
+###### Image from Center Camera
 ![Alt text](/Resizedcenter.png?raw=true "Resized center image")
 
-######Image from Left Camera 
+###### Image from Left Camera 
 ![Alt text](/Resizedleft.png?raw=true "Resized left image") 
 
-######Image from Right Camera
+###### Image from Right Camera
 ![Alt text](/Resizedright.png?raw=true "Resized right image")
 
 The resized images are then agumented by flipping the image. this helps to generealize the model and the track is not memorized during training. This data is then normalized before feeding into the model during training.
