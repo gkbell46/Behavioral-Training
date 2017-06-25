@@ -20,9 +20,9 @@ My project includes the following files:
 * model.json containing a trained convolution neural network
 * README.md summarizing the results
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
-####1. Nvida model has been used with minor modifications.
+#### 1. Nvida model has been used with minor modifications.
 
 The details of the layer is ashown below
 
@@ -34,7 +34,7 @@ The details of the layer is ashown below
 2. Added droupout layer to avoid overfitting of the model. Layers can be seen in run_save_model() function in the utilityFile.py
 3. Image resizing
 
-####2. Appropriate training data
+#### 2. Appropriate training data
 
 (I have used the training dataset provided by Udacity)
 
@@ -66,13 +66,13 @@ Training data can be chosen to keep the vehicle driving on the road. Data should
 
 The resized images are then agumented by flipping the image. this helps to generealize the model and the track is not memorized during training. This data is then normalized before feeding into the model during training.
 
-####3. Process involved in Training 
+#### 3. Process involved in Training 
 
 After the collection process and preprocessing, the data was randomly shuffled and split into 80% training data and 20% validation data. 
 
 Training data was used for training the model. The validation set helped to determine if the model was over or under fitting after every iteration. The model was trained and validated on different sets to ensure that the model was not overfitting. Adam optimizer has been used so that setting of the learning rate for training is not necessary.
 
-####4. Testing the model
+#### 4. Testing the model
 The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
