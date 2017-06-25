@@ -1,4 +1,4 @@
-#**Behavioral Cloning the car control** 
+# **Behavioral Cloning the car control** 
 
 ## Project overview
 This project is all about capturing the human subcongnitive driving skills and reproduce them using convolutional neural network model. 
